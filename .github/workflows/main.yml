@@ -20,7 +20,7 @@ jobs:
 
       - name: Create RDP User
         run: |
-          $Password = "Rdp@12345"
+          $Password = "Rdp@2025!"
           $Secure = ConvertTo-SecureString $Password -AsPlainText -Force
           New-LocalUser -Name "RDP" -Password $Secure -AccountNeverExpires
           Add-LocalGroupMember -Group "Administrators" -Member "RDP"
